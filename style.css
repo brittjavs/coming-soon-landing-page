@@ -5,4 +5,48 @@
 }
 body{
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    /* justify-content: center; */
 }
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    padding: 30px;
+}
+
+.logo img{
+    height: 25px;
+}
+
+.text{ 
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main-text{
+    margin-top: 65px;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 15px;
+}
+
+.main-text strong{
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+}
+
+p{
+    margin-top: 25px;
+    color: hsl(0, 36%, 70%);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
