@@ -20,19 +20,20 @@ body{
     text-align: center;
 }
 
-.logo{
+header{
+    height: auto;
     padding: 30px;
 }
 
-.logo img{
-    height: 25px;
+header img{
+    width: 100px;
 }
 
 .text{ 
     width: 100%;
     height: auto;
     text-align: center;
-    padding: 30px 30px 0 30px;
+    padding: 15px 30px 0 30px;
 }
 
 .main-text{
@@ -81,17 +82,33 @@ input{
     padding-left: 30px;
 }
 
+input::placeholder{
+    color: hsl(0, 36%, 70%);
+    opacity: 0.8;
+}
+
 #error-text, .error-icon{
     display: none;
 }
 
-.email-form button{
+button{
+    cursor: pointer;
+    position: absolute;  
+    right: 0;
+    top: 0;
     width: 65px;
-    height: 50px;
+    height: 100%;
     border-radius: 50px;
+    outline: none;
     border: none;
     background-image: linear-gradient(hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    box-shadow: 0px 0px 10px 1px hsl(0, 36%, 70%, 0.5);
 }
+
+button:hover{
+    background-image: linear-gradient(hsl(0, 80%, 86%),hsla(0, 50%, 80%, 0.7));
+}
+
 
 .photo{
     width: 100%;
