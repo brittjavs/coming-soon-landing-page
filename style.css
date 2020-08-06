@@ -89,8 +89,31 @@ input::placeholder{
     opacity: 0.8;
 }
 
-#error-text, .error-icon{
+.error-icon{
     display: none;
+    position: absolute;
+    top: 25%;
+    right: 80px;
+
+}
+
+.error-text{
+    display: none;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+form.error .error-text{
+    display: block;
+}
+
+form.error .error-icon{
+    display: block;
+}
+
+form.error input{
+    border: 2px solid hsl(0, 93%, 68%);
 }
 
 button{
@@ -116,6 +139,16 @@ button:hover{
     height: 300px;
     background-image: url(images/hero-mobile.jpg);
     background-repeat: no-repeat;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 60px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
 
 @media only screen and (min-width: 768px){
@@ -165,5 +198,9 @@ button:hover{
 
     button{
         width: 80px;
+    }
+
+    .attribution{
+        display: none;
     }
 }
